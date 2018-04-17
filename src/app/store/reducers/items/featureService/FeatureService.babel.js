@@ -178,6 +178,31 @@ const defaultLayerDefinition = {
 			length: 256
 		},
 		{
+			name: 'Amount',
+			type: 'esriFieldTypeInteger',
+			alias: 'Amount',
+			domain: null,
+			editable: true,
+			nullable: true
+		},
+		{
+			name: 'Obs_Type',
+			type: 'esriFieldTypeString',
+			alias: 'Type',
+			domain: null,
+			editable: true,
+			nullable: true,
+			length: 75
+		},
+		{
+			name: 'Obs_Date',
+			type: 'esriFieldTypeDate',
+			alias: 'Date',
+			domain: null,
+			editable: true,
+			nullable: true
+		},
+		{
 			name: 'Description',
 			type: 'esriFieldTypeString',
 			alias: 'Description',
