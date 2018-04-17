@@ -35,11 +35,11 @@
 		//-------------------------------------------------------------------------------------------
 		var configOptions = {
 			// Enter an application ID created through the Crowdsource builder
-			appid: "",
+			appid: "86996e59e22243e383091e652e269772",
 			// Optionally to be able to use the appid URL parameter, configure here the list of application author
 			//  whose application are allowed to be viewed by this Crowdsource deployment
 			// This is the Portal username of the Crowdsource owner (e.g. ["user1"] or ["user1", "user2"])
-			authorizedOwners: ["*"],
+			authorizedOwners: ["deshegis"],
       // Optionally to secure Crowdsource's access, use an OAuth application ID (example: 6gyOg377fLUhUk6f)
       oAuthAppId: ""
 		};
