@@ -176,7 +176,7 @@ export default class CrowdsourceForm extends React.Component {
       }
     };
 
-    if (field.type === 'text' || field.type === 'textarea' || field.type === 'location') {
+    if (field.type === 'text' || field.type === 'textarea' || field.type === 'location' || field.type === 'date' || field.type === 'integer') {
       const maxLength = this.getFieldDefinitionValue(field.fieldID,'length');
       const options = {
         inputAttr: {
@@ -191,6 +191,10 @@ export default class CrowdsourceForm extends React.Component {
       switch (field.type) {
         case 'textarea':
           return <Textarea {...settings}></Textarea>;
+		 case 'date':
+          return <Date {...settings}></Date>;
+		 case 'integer':
+          return <Integer {...settings}></Integer>; 
         case 'location':
           return <Location map={this.props.map} locationFromOtherSource={this.state.locationFromOtherSource} {...settings}></Location>;
         default:
