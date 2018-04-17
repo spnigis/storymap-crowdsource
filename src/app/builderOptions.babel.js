@@ -34,6 +34,33 @@ export const featureServiceDefaults = {
         placeholder: builderText.contribute.defaultForm.name.placeholder,
         validations: ['arcgisSupportedHtml']
       },
+	  Amount: {
+        required: true,
+        type: 'integer',
+        fieldID: 'Amount',
+        label: builderText.contribute.defaultForm.Amount.label,
+        attributeName: builderText.contribute.defaultForm.Amount.attribute,
+        placeholder: builderText.contribute.defaultForm.Amount.placeholder,
+        validations: []
+      },
+	  Obs_Type: {
+        required: true,
+        type: 'text',
+        fieldID: 'Obs_Type',
+        label: builderText.contribute.defaultForm.Obs_Type.label,
+        attributeName: builderText.contribute.defaultForm.Obs_Type.attribute,
+        placeholder: builderText.contribute.defaultForm.Obs_Type.placeholder,
+        validations: ['arcgisSupportedHtml']
+      },
+	  Obs_Date: {
+        required: true,
+        type: 'date',
+        fieldID: 'Obs_Date',
+        label: builderText.contribute.defaultForm.Obs_Date.label,
+        attributeName: builderText.contribute.defaultForm.Obs_Date.attribute,
+        placeholder: builderText.contribute.defaultForm.Obs_Date.placeholder,
+        validations: []
+      },
       LocationName: {
         required: true,
         type: 'location',
